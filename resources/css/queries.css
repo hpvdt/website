@@ -10,7 +10,7 @@
     .long-copy {
         width: 90%;
         margin-left: 5%;
-        font-size: 85% }
+        font-size: 90% }
     
     .row {padding:0 2%;}
     .logo {
@@ -29,7 +29,8 @@
         margin-right: 0;
         width: 98%;
     }
-    
+
+}
     
 
 
@@ -135,12 +136,31 @@ Ipad screen width is 168px */
         width:100%;
 	    margin: 0 0 4% 0;
     }
+    .captains {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;   
+    }
+    
+    .captain-name {
+        text-align: left;
+        margin-left:0;
+    }
+    
+    .captain-container {
+        width:100%;
+        
+    }
+    .captain-photo img {
+        display:inline-block;
+        width:70%;
+        margin-left:15%;
+    }
         
     h1 {font-size: 180%;}
     h2 {font-size: 150%;}
     
     .btn:link,
-    .btn:visited, {
+    .btn:visited {
         padding: 5px 20px;
     }
     .section-experience {
@@ -191,8 +211,8 @@ Ipad screen width is 168px */
         margin-left:25%;
     }
     .footer-col {
-        width:50%;}
-        }
+        width:50%;
+    }
     
     .previous-sponsor,
     .bronze-sponsor {
@@ -212,7 +232,6 @@ Ipad screen width is 168px */
     
 /* Small phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    body{font-size:15px;}
     section{padding:20px 0;} 
     h1 {font-size: 150%;}
     

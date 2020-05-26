@@ -22,6 +22,7 @@ background: #000046;  /* fallback for old browsers */
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -30,7 +31,7 @@ html{
     color: #403d3d;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 21px;
     text-rendering: optimizeLegibility;    
 }
 
@@ -126,7 +127,8 @@ h2:after {
 
 /* --------------- PARAGRAPHS ---------------- */
 
-.long-copy {
+.long-copy,
+.captain-paragraph {
     line-height: 145%;
     font-size: 90%;
     margin-top: 10px;/*width of text 70% of block, but it needs to be centered after*/
@@ -140,6 +142,7 @@ a:visited {
     text-decoration: none;
     border-bottom: 1px solid #0f97e6;
     padding-bottom: 1px;
+    -webkit-transition: color 0.2s, border-bottom 0.2s;
     transition: color 0.2s, border-bottom 0.2s;
 }
 a:hover,
@@ -157,6 +160,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s;
     transition: background-color 0.2s, border 0.2s, color 0.3s;
 }
 
@@ -198,6 +202,7 @@ input[type=submit]:active {
 /* -------------------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
     background-position: center;
     height: 100vh;    /*  100% of the viewport  */
@@ -211,6 +216,7 @@ header {
     width:1140px; /* same width as .row class, but absolutely positioned  */
     top:50%;
     left:50%;
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);/* translate element half of its width and height, up and to the left */
 }
 
@@ -224,7 +230,15 @@ header {
     float:left;
     margin-top:20px;
 }
+
+
 /*---- Main navigation ----*/
+
+.top-nav {
+    width: 100%;
+    max-width: 1600px;
+}
+
 .main-nav {          /* this is an unordered list */
     float: right;
     list-style:none;
@@ -243,6 +257,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent; /*margin not visible until we hover it */
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
     padding: 8px 0;
 }
@@ -276,6 +291,7 @@ header {
     left:0;
     width:100%;
     background-color: #18294d;
+    -webkit-box-shadow: 0 2px 2px #0f4c75 ;
     box-shadow: 0 2px 2px #0f4c75 ;
     z-index: 9999;
 }
@@ -340,11 +356,16 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    -webkit-transform: scale(1);
     transform: scale(1); /* create zoom-in effect */
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .experience-photo img:hover {
     opacity: 1;
+    -webkit-transform: scale(0.90);
     transform: scale(0.90);
 }
 
@@ -396,15 +417,82 @@ header {
 /* -------------------------------------- */
 
 .section-team {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(img/15%20Snowbird.jpg);
     background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
     background-attachment: fixed;
-    background-size: 120vp;
+    background-size: cover;
     color:#fff;
+}
+
+.captain-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 45%;
+    padding:20px 0;
+    margin-bottom:40px;
+}
+
+
+.captain-photo-container {
+    width: 90%;
+    margin-left:5%;
+    height: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+
+.captain-photo {
+    width:100%;
+    height: auto;
+    
+}
+.captain-photo fig {
+    
+}
+
+.captain-photo img {
+    width:100%;
+    height:auto;
+}
+
+.captain-name {
+    text-align: center;
+    font-size:120%;
+    font-weight:400;
+    margin: 10px 5px;
+}
+    
+.captain-description {
+    padding:10px;
+    margin-bottom:40px;
+    margin-left:3%;
+}
+.captain-description span {
+    font-size: 110%;
+}
+
+.captain-paragraph {
+    margin-top:15px;
+    width: 100%;
+}
+
+.captain-description span {
+    color: #0FA6FF;
+    line-height: 150%;
+    font-weight: 350;
 }
 
 .member-description {
     padding-left: 40px;
 }
+
 .member-photo img {
     display:inline-block;
     width:100%;
@@ -471,12 +559,16 @@ iframe {
     width:100%;
     height:300px;
     opacity: 0.8;
+    -webkit-transition: opacity 0.5s, -webkit-box-shadow 0.5s;
+    transition: opacity 0.5s, -webkit-box-shadow 0.5s;
     transition: opacity 0.5s, box-shadow 0.5s ;
+    transition: opacity 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     border:0;   
 }
 
 iframe:hover {
     opacity: 1;
+     -webkit-box-shadow: 1px 1px 5px #0f4c75;
      box-shadow: 1px 1px 5px #0f4c75;
 }
 
@@ -617,6 +709,7 @@ footer p {
 .ion-social-facebook,
 .ion-social-youtube,
 .ion-social-instagram {
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
 
