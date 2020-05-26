@@ -453,9 +453,6 @@ header {
     height: auto;
     
 }
-.captain-photo fig {
-    
-}
 
 .captain-photo img {
     width:100%;
@@ -536,7 +533,6 @@ header {
 }
 .contact-info div{
     display:block;
-    vertical-align: middle
 }
 
 .contact-info i{
