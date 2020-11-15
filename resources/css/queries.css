@@ -1,4 +1,11 @@
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1325px) {
+    .main-nav li {
+        margin-left: 15px;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
     body {font-size: 19px;}
     
@@ -9,12 +16,12 @@
     
     .long-copy {
         width: 90%;
-        margin-left: 5%;
+        margin: 0 5%;
         font-size: 90% }
     
     .row {padding:0 2%;}
     .logo {
-        height:40px;
+        height:38px;
         width: auto;
     }
 
@@ -29,6 +36,10 @@
         margin-right: 0;
         width: 98%;
     }
+    
+    .contact-form{
+    width:70%
+    }
 
 }
     
@@ -36,7 +47,7 @@
 
 /* Small tablets to big tablets tablets: from 768px to 1023px
 Ipad landscape mode has 1024 px*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1100px) {
     body {font-size: 18px;}
     
     section{padding: 50px 0;}
@@ -44,13 +55,18 @@ Ipad landscape mode has 1024 px*/
     .logo {
         height:35px;
         width: auto;
-        margin-top:30px
+        margin-top:10px
     }
     
     .main-nav {
-        width:68%;
+        width:55%;
         text-align: right;
     }
+    
+    .sponsors-nav {
+        width:30%;
+    }
+    
     .main-nav li {
         margin-left: 3%;
         margin-right:0;
@@ -62,10 +78,16 @@ Ipad landscape mode has 1024 px*/
         width:90%;  
         margin-left:10%;
     }
+    
+    .contact-form{
+    width:80%
+    }
+   /*  
     .sponsor-subtitle { 
         margin: 60px 30% 35px 30%;
         padding: 7px 30px  1px 30px;
     }
+    */
      footer {
         padding: 30px 3%;
     }   
@@ -76,7 +98,7 @@ Ipad landscape mode has 1024 px*/
     
 /* SMALL PHONES to SMALL TABLETS. From 481px to 767px.
 Ipad screen width is 168px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     body{font-size:16px;}
     section{padding:40px 0;}
     
@@ -84,14 +106,16 @@ Ipad screen width is 168px */
     .row {padding: 0 4%;}
     
     .main-nav {display:none;}
+
     
    .mobile-nav-icon {
        display:inline-block;
+       margin-top:5px;
     }
     
     .main-nav {
         float:left;
-        margin-top: 30px;
+        margin-top: 20px;
         font-size:100%;
         width:50%;
     }
@@ -108,9 +132,9 @@ Ipad screen width is 168px */
         font-size: 100%;
     }
     .logo {
-        margin-top:20px;
-        width:40%;
-        height:auto;
+        margin-top:10px;
+        height:30px;
+        width:auto;
     }
     
     .sticky .main-nav {margin-top: 15px;}
@@ -120,6 +144,7 @@ Ipad screen width is 168px */
     }
     .long-copy {
         width:100%;
+        margin:0;
     }
 
     .sticky .main-nav li a:link,
@@ -199,12 +224,12 @@ Ipad screen width is 168px */
         width:80%;  
         margin-left:10%;
     }
-    
+  /*   
     .sponsor-subtitle { 
-        margin: 100px 20% 35px 20%;
+       margin: 100px 20% 35px 20%;
         width:60%;
     }
-    
+    */
     .member-photo img {
         display:inline-block;
         width:50%;
@@ -213,6 +238,11 @@ Ipad screen width is 168px */
     .footer-col {
         width:50%;
     }
+    
+    .contact-form{
+    width:80%
+    }
+    
     
     .previous-sponsor,
     .bronze-sponsor {
@@ -245,7 +275,7 @@ Ipad screen width is 168px */
     .mobile-nav-icon {
         position:fixed;
         right:10px;
-        top:10px;
+        top:5px;
         margin-top:10px;
         font-size:90%;
     }
@@ -268,6 +298,8 @@ Ipad screen width is 168px */
         font-size: 90%;
     }
     
+    .top-nav a {margin-top:0;}
+    
     .logo {
         width: 80%;
         max-width: 250px;
@@ -289,8 +321,12 @@ Ipad screen width is 168px */
         margin-left:15%;
     }
     
+    .contact-form{
+    width:95%
+    }
+    
     .sponsor-subtitle { 
-        margin: 100px 5% 35px 5%;
+       /* margin: 100px 5% 35px 5%;*/
         width:90%;
     }
     

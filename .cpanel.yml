@@ -1,8 +1,7 @@
 ---
 deployment:
     tasks:
-        -export DEPLOYPATH=/home/hpvdt/public_html/
+        -export DEPLOYPATH=/home/hpvdt/repositories/hpvdt_website
         - /bin/cp index.html $DEPLOYPATH
         - /bin/cp style.css $DEPLOYPATH
-
-
+        - /bin/cp -R $DEPLOYPATH 

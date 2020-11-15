@@ -31,7 +31,7 @@ html{
     color: #403d3d;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 22px;
     text-rendering: optimizeLegibility;    
 }
 
@@ -108,6 +108,8 @@ h2:after {
 
 .span {color: #0FA6FF;}
 
+.white {color:white;}
+
 /* --------------- ICONS ---------------- */
 .icon-big{
     font-size: 350%;
@@ -154,6 +156,7 @@ a:active{
 /* --------------- BUTTONS ---------------- */
 .btn:link,
 .btn:visited,
+button,
 input[type=submit] {
     display: inline-block;
     padding: 10px 30px;   /* 10px top and bottom, 30px left and right  */
@@ -177,17 +180,21 @@ input[type=submit] {
 .btn-ghost:visited {
     border: 1px solid #3282b8;    /*  width  linetype   colour  */
     color: #3282b8;
-}  
+}
 
 .btn:hover,
 .btn:active,
+button:hover
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #0f4c75;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+.btn-dark:hover,
+.btn-dark:active,
+button:hover{
     border: 1px solid #0f4c75;
 }
 
@@ -197,11 +204,22 @@ input[type=submit]:active {
     color: #fff;
 }
 
+.btn-dark:link,
+.btn-dark:visited,
+button,
+input[type=submit] {  
+    margin: 10px auto;
+    background-color: #18294d;
+    border: 1px solid #3282b8;
+    color: #fff;
+    text-align: center;
+}
+
 /* -------------------------------------- */
 /* HEADER */
 /* -------------------------------------- */
 
-header {
+#home {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
     background-position: center;
@@ -211,7 +229,7 @@ header {
 
 
 /* Format for the title in the first main section  */
-.home-text-box{
+.home-text-box {
     position:absolute;
     width:1140px; /* same width as .row class, but absolutely positioned  */
     top:50%;
@@ -225,10 +243,10 @@ header {
 }
 
 .logo {
-    height:50px;
+    height:40px;
     width: auto;
     float:left;
-    margin-top:20px;
+    margin: 10px 0;
 }
 
 
@@ -242,12 +260,13 @@ header {
 .main-nav {          /* this is an unordered list */
     float: right;
     list-style:none;
-    margin-top:40px;
+    margin-top:15px;
 }
 
 .main-nav li {
     display:inline-block;
     margin-left: 40px;
+    margin-right: 15px;
 }
 
 .main-nav li a:link,
@@ -272,7 +291,7 @@ header {
 
 .mobile-nav-icon {
     float:right;
-    margin-top:30px;
+    margin-top:10px;
     cursor:pointer;
     display:none;
 }
@@ -285,7 +304,8 @@ header {
 
 
 /*---- Sticky navigation ----*/
-.sticky {
+.sticky,
+.sponsorsNav {
     position:fixed;
     top:0;
     left:0;
@@ -294,6 +314,7 @@ header {
     -webkit-box-shadow: 0 2px 2px #0f4c75 ;
     box-shadow: 0 2px 2px #0f4c75 ;
     z-index: 9999;
+    margin-top: 0;
 }
 
 .sticky .main-nav {margin-top:18px;}
@@ -305,6 +326,8 @@ header {
 .sticky .main-nav li a:visited {
     padding: 17px 0;
 }
+
+
 
 /* -------------------------------------- */
 /* INTORDUCTION - ABOUT US */
@@ -318,11 +341,104 @@ header {
     line-height: 120%;
 }
 
-.intro span{
+.intro span,
+.role-text span{
     color:#0FA6FF;
     font-weight:400;
     letter-spacing: 0.8px
 }
+
+
+
+/* -------------------------------------- */
+/* EXPERIENCE - Slideshow */
+/* -------------------------------------- */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
 /* -------------------------------------- */
 /* EXPERIENCE */
 /* -------------------------------------- */
@@ -368,6 +484,34 @@ header {
     -webkit-transform: scale(0.90);
     transform: scale(0.90);
 }
+
+
+/*--------------------------------------- */
+/* EXPERIENCE SLIDER */
+/* -------------------------------------- */
+/*
+.img-slider {
+    display: inline-block;
+    height:101%;
+    width:auto;  
+    margin:0 2px;
+    transform: translate(-0%,-10%);
+    margin-left: auto;
+
+}
+*/
+.splide {
+    margin: 0 auto;
+    /*
+    align-content: center;
+    padding: 0 10px;
+    */
+}
+/*
+.splide__slide__container {
+    margin:0 10px;
+}
+ */
 
 /* -------------------------------------- */
 /* PROJECTS */
@@ -450,8 +594,7 @@ header {
 
 .captain-photo {
     width:100%;
-    height: auto;
-    
+    height: auto; 
 }
 
 .captain-photo img {
@@ -523,7 +666,7 @@ header {
     font-size: 95%;
 }
 .contact-box{
-    max-width: 800px;
+    max-width: 950px;
     margin: 25px auto;
     border-bottom: 2px solid #e8e8e8;
 }
@@ -551,7 +694,7 @@ header {
     margin-left:20%;
 }
 
-iframe {
+.map{
     width:100%;
     height:300px;
     opacity: 0.8;
@@ -562,7 +705,7 @@ iframe {
     border:0;   
 }
 
-iframe:hover {
+.map:hover {
     opacity: 1;
      -webkit-box-shadow: 1px 1px 5px #0f4c75;
      box-shadow: 1px 1px 5px #0f4c75;
@@ -585,25 +728,97 @@ iframe:hover {
 /* -------------------------------------- */
 /* SPONSORS */
 /* -------------------------------------- */
-.section-sponsors {
-    background-color: #f4f4f4;
+.header-sponsors {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 227, 227, 0.22)),to(rgb(0, 0, 0))), url(img/TitanBackground.jpg);
+    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;    /*  100% of the viewport  */
+    background-attachment: fixed;
 }
+
+.hero-sponsors {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align:center;
+    background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.06), rgba(11, 10, 10, 0.85) 80%);
+    position:relative;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.sponsors-title {
+    text-shadow:
+    -1px -1px 5px rgba(202, 213, 221, 0.7),  
+    1px -1px 5px rgba(202, 213, 221, 0.7),
+    -1px 1px 5px rgba(202, 213, 221, 0.7),
+    1px 1px 5px rgba(202, 213, 221, 0.7);
+ 
+}
+
+.video-bg {
+    position:fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    min-width:100%;
+    min-height: 100%;
+    z-index:-1;
+}
+
+
+.header-text {
+    position:absolute;
+    width: 100%; /* same width as .row class, but absolutely positioned  */
+    top:75%;
+    left:50%;
+    -webkit-transform: translate(-50%,-40%);
+    transform: translate(-50%,-40%);
+    padding-top:0;
+}
+.section-sponsors,
+.contact-form {
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+
 .section-sponsors h2 {
     margin-bottom:0;
 }
 
+.makeAnImpact {
+    display:block;
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.light-sponsors {
+    background-color: #fff;
+    color: #18294d
+}
+.beige-sponsors{
+    background-color:#f4f4f4 
+}
+
 .sponsor-subtitle { 
-    display: inline-block;
-    padding: 10px 30px;   /* 10px top and bottom, 30px left and right  */
-    font-weight: 300;
+    display: inline-block;   /* 10px top and bottom, 30px left and right  */
     text-decoration: none;
-    margin: 100px 30% 35px 30%;
-    background-color: #18294d;
-    border: 1px solid #3282b8;
-    color: #fff;
+    font-weight: 0,900;
+    font-size: 140%;
+    color: #18294d;
+    margin-top:70px;
     text-align: center;
     border-radius: 10px;
-    width:40%;
+    width:100%;
 }
 
 .box-sponsor {
@@ -643,6 +858,12 @@ iframe:hover {
 .previous-sponsor img {
     width: 60%;
     margin-bottom: 10px;
+}
+
+.contact-form{
+    margin: 0 auto;
+    width:100%;
+    background-color:#fff;
 }
 
 /* -------------------------------------- */
@@ -720,6 +941,144 @@ footer p {
 }
 .ion-social-googleplus:hover {
     color: #d34836;
+}
+
+
+/* -------------------------------------- */
+/* CONTACT FORM */
+/* -------------------------------------- */
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding:5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox]{
+    margin:10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+.gform {
+    width:100%;
+    height: 500px;
+    font-size: 50%;
+    border:0;
+}
+
+/* -------------------------------------- */
+/* JOIN PAGE */
+/* -------------------------------------- */
+
+.team-positions {
+    width:80%;
+    text-align: center;
+}
+#header-join {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);    
+    background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;    /*  100% of the viewport  */
+    background-attachment: fixed;
+}
+
+.role-box img {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.header-text2 {
+    position:absolute;
+    width: 100%; /* same width as .row class, but absolutely positioned  */
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-40%);
+    padding-top:0;
+}
+
+/* The Close Button */
+
+.js--close-general,
+.js--close-electronics{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.js--close-general:hover,
+.js--close-general:focus,
+.js--close-electronics:hover,
+.js--close-electronics:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-general,
+.modal-electronics {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height:100%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.79); /* Black w/ opacity */
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #18294d;
+    color: white;
+}
+.modal-title {
+    margin-top:9px
+}
+
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #18294d;
+  color: white;
+}
+    
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  top:50%;
+  transform: translate(0, -50%);
+  max-width: 900px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.3s
+}
+
+.apply {
+    right:0;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
 /* -------------------------------------- */
