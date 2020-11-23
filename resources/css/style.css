@@ -585,6 +585,7 @@ input[type=submit] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height:100vh;
 }
 
 .captain-container {
@@ -595,6 +596,7 @@ input[type=submit] {
     margin:auto;
     flex: auto;
     overflow: hidden;
+    width:45%;
     /*
      -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -605,7 +607,8 @@ input[type=submit] {
     margin-bottom:40px; */
 }
 .captain-container img{
-    width: 80%;
+    height:100%;
+    width:auto;
     margin:auto;
   }
 
