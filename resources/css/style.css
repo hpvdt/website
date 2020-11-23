@@ -589,8 +589,9 @@ input[type=submit] {
 .captains-container {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: inline-flex;
     display: flex;
-    height:100%;
+    width:100%;
 }
 
 .captain-container {
