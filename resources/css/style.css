@@ -590,7 +590,6 @@ input[type=submit] {
 
 .captains-container {
     display: flex;
-    height:100%;
 }
 
 .captain-container {
