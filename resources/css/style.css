@@ -585,26 +585,22 @@ input[type=submit] {
 .section-members {
     display: flex;
     flex-direction: column;
-    height:100%;
     overflow:hidden;
 }
 
 .captains-container {
-    display: -webkit-box;
     display: flex;
     height:100%;
 }
 
 .captain-container {
     display: flex;
-    margin:auto;
     flex: auto;
     overflow: hidden;
-    width:40%;
 }
 
 .captain-container img{
-    height:auto;
+
   }
 
 
