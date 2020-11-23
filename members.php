@@ -31,14 +31,14 @@
         
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167301335-1"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167301335-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
           gtag('config', 'UA-167301335-1');
-        </script>
+        </script> -->
 
         
         
@@ -47,7 +47,7 @@
     
     
     <body>
-        <header id="header-members">
+        <!-- <header id="header-members">
             <nav>
                 <div class="row top-nav">
                     <a href="index.html"><img src="resources/img/white logo 1.png" alt="HPDT logo" class="logo"></a>
@@ -59,9 +59,9 @@
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon"></i></a>
                 </div> 
-            </nav>    
+            </nav>     -->
 
-            <div class="section-members">
+            <div class="section-members" style="display: flex; flex-direction: column;">
                 <h1> <br> Team Captains<br></h1>
                 
                 <div class="captains-container" style="display:flex">
@@ -82,7 +82,7 @@
                 <!-- <a class="btn btn-ghost js--scroll-to-intro" href="#"><strong>Read more</strong></a> -->
             </div>
                  
-        </header>
+        <!-- </header> -->
 
     </body>
 </html>
