@@ -574,11 +574,11 @@ input[type=submit] {
 
 
 #header-members {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
+    /* background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
     background-position: center;
-    height: 100vh;    /*  100% of the viewport  */
-    background-attachment: fixed;
+    height: 100vh; 
+    background-attachment: fixed; */
 }
 
 

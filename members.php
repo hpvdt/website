@@ -46,7 +46,7 @@
     </head>
     
     
-    <body>
+    <body style="box-sizing:border-box">
         <!-- <header id="header-members">
             <nav>
                 <div class="row top-nav">
