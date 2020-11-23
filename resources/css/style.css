@@ -577,6 +577,8 @@ input[type=submit] {
     -webkit-box-direction:normal;
     -ms-flex-direction:row;
     flex-direction:row;
+    flex-wrap:nowrap;
+    overflow: hidden;
 }
 
 .captain-container {
