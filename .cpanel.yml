@@ -4,5 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/hpvdt/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp members.html $DEPLOYPATH
+    - /bin/cp team.html $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH
