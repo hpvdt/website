@@ -589,13 +589,17 @@ input[type=submit] {
 
 .captains-container {
     display: flex;
+    margin: 0 8%;
+
 }
 
 .captain-container {
     display: flex;
     flex: auto;
     overflow: hidden;
-    margin: 10%;
+    width: 45%;
+    margin:0 5%;
+   
 }
 
 .captain-container img{
@@ -609,13 +613,13 @@ input[type=submit] {
 
 .captain-photo {
     width:100%;
-    height: auto; 
+    height: auto;  */
 }
 
 .captain-photo img {
     width:100%;
-    height:auto;
-}
+    /* height:100%;*/
+} 
 
 .captain-name {
     text-align: center;
