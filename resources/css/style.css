@@ -561,34 +561,31 @@ input[type=submit] {
 /* -------------------------------------- */
 /* TEAM */
 /* -------------------------------------- */
+#header-members {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed;
+}
+
 
 .section-team {
-    background-image:  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);    
+    /* background-image:  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);    
     background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
     background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
     background-attachment: fixed;
     background-size: cover;
-    color:#fff;
+    color:#fff; */
+    /* display: flex;
+    flex-direction: column; */
 }
 
-
-
-
-#header-members {
-    /* background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
-    background-position: center;
-    height: 100vh; 
-    background-attachment: fixed; */
-    display: flex;
-}
-
-
-.section-members {
+/* .section-members {
     display: flex;
     flex-direction: column;
     overflow:hidden;
-}
+} */
 
 .captains-container {
     display: flex;
@@ -601,7 +598,7 @@ input[type=submit] {
 }
 
 .captain-container img{
-
+    width: 100%;
   }
 
 
