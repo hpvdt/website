@@ -78,7 +78,7 @@ h1{
     
 }
 
-h2 {
+h2, h5 {
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
@@ -91,7 +91,8 @@ h3 {
     margin-bottom: 10px;
 }
 
-h2:after {
+h2:after,
+h5:after {
     display: block;
     height: 2px;
     width: 100px;
@@ -99,6 +100,21 @@ h2:after {
     content:" "; /* when using pseudo class :after specify the content, " " in this case */
     margin: 0 auto;
     margin-top:30px;
+}
+h4 {
+    font-weight: 300;
+    font-size: 120%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+h5 {
+    font-weight: 400;
+    text-transform:uppercase;
+    font-family: 'Lato', 'Arial', sans-serif;
+    color: #000;
 }
 
 .box p {
@@ -562,96 +578,63 @@ input[type=submit] {
 /* TEAM */
 /* -------------------------------------- */
 #header-members {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/team_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/team_background.jpg);
     background-position: center;
     height: 100vh; 
     background-attachment: fixed;
 }
 
-
-.section-team {
-    /* background-image:  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);    
-    background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
-    background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    color:#fff; */
-    /* display: flex;
-    flex-direction: column; */
-}
-
-/* .section-members {
+.section-captains {
     display: flex;
     flex-direction: column;
-    overflow:hidden;
-} */
+    align-items: center;
+    justify-content: center;
+    margin:50px 0;
+    /* height: 80%; */
+}
 
-.captains-container {
+.members-subtitle {
+    margin: 0px 0 10px 0;
+} 
+
+.captains-container, 
+.members-container {
     display: flex;
     margin: 0 8%;
 
 }
+.members-container {
+        flex-wrap: wrap;
 
-.captain-container {
-    display: flex;
-    flex: auto;
-    overflow: hidden;
-    width: 45%;
-    margin:0 5%;
-   
 }
 
-.captain-container img{
+.captain-container, .member-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.captain-container {
+    width: 45%;
+    margin:0 5%;
+}
+
+.captain-container img,
+.member-container img {
     width: 100%;
     height: auto;
   }
 
-
-
-
-
-.captain-photo {
-    width:100%;
-    height: auto;  */
-}
-
-.captain-photo img {
-    width:100%;
-    /* height:100%;*/
-} 
-
-.captain-name {
-    text-align: center;
-    font-size:120%;
-    font-weight:400;
-    margin: 10px 5px;
-}
+.member-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 20%;
+    margin:0 2%;
     
-.captain-description {
-    padding:10px;
-    margin-bottom:40px;
-    margin-left:3%;
 }
-.captain-description span {
-    font-size: 110%;
-}
-
-.captain-paragraph {
-    margin-top:15px;
-    width: 100%;
-}
-
-.captain-description span {
-    color: #0FA6FF;
-    line-height: 150%;
-    font-weight: 350;
-}
-
-
-
-
-
 
 
 
