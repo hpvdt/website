@@ -563,7 +563,8 @@ input[type=submit] {
 /* -------------------------------------- */
 
 .section-team {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(img/15%20Snowbird.jpg);
+    background-image:  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);    
+    background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
     background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -579,6 +580,7 @@ input[type=submit] {
     background-position: center;
     height: 100vh; 
     background-attachment: fixed; */
+    display: flex;
 }
 
 
