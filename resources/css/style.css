@@ -595,10 +595,12 @@ input[type=submit] {
     display: flex;
     flex: auto;
     overflow: hidden;
+    margin: 10%;
 }
 
 .captain-container img{
     width: 100%;
+    height: auto;
   }
 
 
