@@ -617,18 +617,16 @@ input[type=submit] {
 .members-container {
     display: flex;
     margin: 20px 8%;
-
 }
 .members-container {
-        flex-wrap: wrap;
-
+    flex-wrap: wrap;
 }
 
-.captain-container, .member-container {
+/* .captain-container, .member-container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
+} */
 
 .captain-container {
     width: 45%;
