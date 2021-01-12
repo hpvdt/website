@@ -577,12 +577,22 @@ input[type=submit] {
 /* -------------------------------------- */
 /* TEAM */
 /* -------------------------------------- */
+
+
 #header-members {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(img/team_background.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+}
+
+.section-team {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(img/15%20Snowbird.jpg);
+    background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color:#fff;
 }
 
 .section-captains {
@@ -596,6 +606,11 @@ input[type=submit] {
 
 .members-subtitle {
     margin: 0px 0 10px 0;
+}
+.member-photo img {
+    display:inline-block;
+    width:100%;
+    margin-left:10%;
 }
 
 .captains-container,
@@ -639,6 +654,11 @@ input[type=submit] {
 .member-container:hover .middle {
     opacity: 1;
   }
+  
+.member-description {
+    padding-left: 40px;
+}
+
 .middle {
     /* font-weight: 400; */
     transition: .7s ease;
