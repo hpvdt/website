@@ -617,6 +617,7 @@ input[type=submit] {
 .members-container {
     display: flex;
     margin: 20px 8%;
+    flex-wrap: wrap;
 }
 .members-container {
     flex-wrap: wrap;
