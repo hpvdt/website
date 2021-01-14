@@ -29,7 +29,7 @@
     
     <body>
                 <nav class="sponsorsNav">
-                    <div class="row top-nav">
+                    <div class="top-nav">
                         <a href="index.html"><img src="resources/img/white%20logo%201.png" alt="HPDT logo" class="logo"></a>
                         <ul class="main-nav sponsors-nav js--main-nav" >
                             <!--

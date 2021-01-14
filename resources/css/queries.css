@@ -1,19 +1,21 @@
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1325px) {
-    .main-nav li {
+    /* .main-nav li {
         margin-left: 15px;
-    }
+    } */
 }
 
 
 @media only screen and (max-width: 1200px) {
     body {font-size: 19px;}
     
-    .home-text-box{
+    /* .home-text-box{
         width:100%;
         padding:0 2%;
-    }
-    
+    } */
+    /* .top-nav {
+        padding-left:0;
+    } */
     .long-copy {
         width: 90%;
         margin: 0 5%;
@@ -25,10 +27,10 @@
         width: auto;
     }
 
-    .main-nav li {
+    /* .main-nav li {
         margin-left: 20px;
         margin-right:0;
-    }
+    } */
     
     
     .member-description .long-copy {
@@ -59,8 +61,8 @@ Ipad landscape mode has 1024 px*/
     }
     
     .main-nav {
-        width:55%;
-        text-align: right;
+        /* width:55%; */
+        /* text-align: right; */
     }
     
     .sponsors-nav {
@@ -68,8 +70,8 @@ Ipad landscape mode has 1024 px*/
     }
     
     .main-nav li {
-        margin-left: 3%;
-        margin-right:0;
+        /* margin-left: 3%;
+        margin-right:0; */
         font-size: 88%
     }
     
