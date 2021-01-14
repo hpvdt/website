@@ -1070,7 +1070,8 @@ input[type=checkbox]{
     color: white;
 }
 .modal-title {
-    margin-top:9px
+    margin-top:9px;
+    text-align: center
 }
 
 
