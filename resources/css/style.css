@@ -1087,8 +1087,9 @@ input[type=checkbox]{
   position: relative;
   background-color: #fefefe;
   margin: auto;
+  height:80%;
   top:50%;
-  -webkit-transform: translate(0, -50%);
+  -webkit-transform:;
   transform: translate(0, -50%);
   max-width: 900px;
   border: 1px solid #888;
@@ -1098,7 +1099,8 @@ input[type=checkbox]{
   -webkit-animation-name: animatetop;
   animation-name: animatetop;
   -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s
+  animation-duration: 0.3s;
+
 }
 
 .apply {
