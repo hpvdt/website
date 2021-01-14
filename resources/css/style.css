@@ -278,7 +278,8 @@ input[type=submit] {
     float: right;
     list-style:none;
     margin-top:15px;
-    flex: flex-shrink
+    flex: flex-shrink;
+    display:flex;
 }
 
 .main-nav li {
