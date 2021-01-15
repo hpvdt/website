@@ -119,8 +119,7 @@ Ipad screen width is 168px */
         float:left;
         margin-top: 20px;
         font-size:100%;
-        width:50%;
-        
+        width:50%;        
     }
     
     .main-nav li {
@@ -264,8 +263,8 @@ Ipad screen width is 168px */
     }
 }
     
-/* Small phones from 0 to 480px */
-@media only screen and (max-width: 480px) {
+/* Small phones from 0 to 490px */
+@media only screen and (max-width: 490px) {
     section{padding:20px 0;} 
     h1 {font-size: 150%;}
     
@@ -301,6 +300,7 @@ Ipad screen width is 168px */
         padding:7px 0;
         font-size: 90%;
     }
+    
     
     .top-nav{
         flex-wrap: wrap;
@@ -364,9 +364,71 @@ Ipad screen width is 168px */
     .footer-col {
         width:50%;
     }
-    
+
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:70%;
+        /* left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%); */
+    }
+
+    .modal-content{
+        overflow-y: initial !important;
+        margin-top:  20px;
+        height:90vh
+    }
+    .modal-body{
+        height: 73vh;
+        overflow-y: auto;
+    }
+    .modal-footer{
+        bottom:0;
+        transform: translate(0,10%);
+        -webkit-transform: translate(0,10%);
+        -moz-transform: translate(0,10%);
+        -ms-transform: translate(0,10%);
+        -o-transform: translate(0,10%);
 }
     
+}
+
+/* Small phones from 0 to 350px */
+@media only screen and (max-width: 350px) {
+    h5{font-size: 140%;} 
+    h5::after {margin-top:10px;}
+
+    h3 {
+        font-size: 100%;
+        margin-bottom:5px;
+    }
+    .long-copy {
+        font-size: 80%;
+    }
+
+    .main-nav li:last-child {
+        padding-bottom: 100%;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+    }
+
+    .modal-header {
+        padding:1px 10px}
+    .modal-title {
+        margin-top:5px
+    }
+
+
+}
+
     
     
     

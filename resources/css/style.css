@@ -1096,8 +1096,11 @@ input[type=checkbox]{
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: auto;
-  height:78%;
+  margin: 2% auto 0 auto;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
   top:50%;
   -webkit-transform:;
   transform: translate(0, -50%);

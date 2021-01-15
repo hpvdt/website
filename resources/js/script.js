@@ -66,10 +66,15 @@ $('document').ready(function() {
         var icon= $('.js--nav-icon i');
         
         nav.slideToggle(200);
+
         if(icon.hasClass('ion-navicon')) {
+            
             icon.addClass('ion-close');
             icon.removeClass('ion-navicon');
         } else {
+            // nav.attr('style','height:100%')
+            // nav.attr('style','background-color:rgb(119, 119, 121)')
+            // nav.attr('style','bottom:0')
             icon.addClass('ion-navicon');
             icon.removeClass('ion-close');
         }});
@@ -82,9 +87,6 @@ $('document').ready(function() {
         var btn_electronics = document.getElementById("btn-electronics");
     
     
-    
-    
-    
         // Get the modal
         var modal_general = document.querySelector('.modal-general');
         var modal_electronics = document.querySelector('.modal-electronics');
@@ -92,7 +94,6 @@ $('document').ready(function() {
     /*-----------open the modals-----*/
         btn_general.onclick = function(){
             modal_general.style.display = "block";
-            
         };
     
         btn_electronics.onclick = function(){
