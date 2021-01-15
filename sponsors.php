@@ -278,7 +278,7 @@
             <div class="row">
                 <h2>Make an Impact</h2>
             </div>
-            <p class="longcopy" style="width:70%">We are delighted to see you are interested in supporting our team. Please complete the form below or send us an email at <a href="mailto:captain@hpvdt.skule.ca">captain@hpvdt.skule.ca</a>, and we will get back to you soon.<br><br></p>
+            <p class="longcopy" style="width:70%; text-align:center">We are delighted to see you are interested in supporting our team. Please complete the form below or send us an email at <a href="mailto:captain@hpvdt.skule.ca">captain@hpvdt.skule.ca</a>, and we will get back to you soon.<br><br></p>
             <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLScCbYCzIdPrC4VSLI6iMKmHaewaWkPLpfdvVx9KDmodEmgNJw/viewform?embedded=true" width="640" height="907" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             
             <!--

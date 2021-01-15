@@ -9,10 +9,10 @@
 @media only screen and (max-width: 1200px) {
     body {font-size: 19px;}
     
-    /* .home-text-box{
+    .home-text-box{
         width:100%;
         padding:0 2%;
-    } */
+    }
     /* .top-nav {
         padding-left:0;
     } */
@@ -120,10 +120,12 @@ Ipad screen width is 168px */
         margin-top: 20px;
         font-size:100%;
         width:50%;
+        
     }
     
     .main-nav li {
         display: block;
+        padding:0 10%;
     }
     
     .main-nav li a:link,
@@ -300,6 +302,9 @@ Ipad screen width is 168px */
         font-size: 90%;
     }
     
+    .top-nav{
+        flex-wrap: wrap;
+    }
     .top-nav a {margin-top:0;}
     
     .logo {
