@@ -666,6 +666,7 @@ input[type=submit] {
   
 .member-description {
     padding-left: 40px;
+    padding-top:10px;
 }
 
 .middle {
@@ -852,7 +853,7 @@ input[type=submit] {
     font-weight: 0,900;
     font-size: 140%;
     color: #18294d;
-    margin-top:70px;
+    margin:60px auto 10px auto;
     text-align: center;
     border-radius: 10px;
     width:100%;
