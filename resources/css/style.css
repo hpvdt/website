@@ -22,7 +22,8 @@ background: #000046;  /* fallback for old browsers */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html{
@@ -160,6 +161,7 @@ a:visited {
     border-bottom: 1px solid #0f97e6;
     padding-bottom: 1px;
     -webkit-transition: color 0.2s, border-bottom 0.2s;
+    -o-transition: color 0.2s, border-bottom 0.2s;
     transition: color 0.2s, border-bottom 0.2s;
 }
 a:hover,
@@ -179,6 +181,7 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.3s;
+    -o-transition: background-color 0.2s, border 0.2s, color 0.3s;
     transition: background-color 0.2s, border 0.2s, color 0.3s;
 }
 
@@ -236,7 +239,7 @@ input[type=submit] {
 
 #home {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
     background-position: center;
     height: 100vh;    /*  100% of the viewport  */
@@ -251,7 +254,8 @@ input[type=submit] {
     top:50%;
     left:50%;
     -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);/* translate element half of its width and height, up and to the left */
+    -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);/* translate element half of its width and height, up and to the left */
 }
 
 .home-text-box span{
@@ -307,6 +311,7 @@ input[type=submit] {
     font-size: 90%;
     border-bottom: 2px solid transparent; /*margin not visible until we hover it */
     -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
     padding: 8px 0;
 }
@@ -341,7 +346,8 @@ input[type=submit] {
     left:0;
     width:100%;
     background-color: #18294d;
-    box-shadow: 0 2px 2px #0f4c75 ;
+    -webkit-box-shadow: 0 2px 2px #0f4c75 ;
+            box-shadow: 0 2px 2px #0f4c75 ;
     z-index: 9999;
     margin-top: 0;
 }
@@ -508,16 +514,19 @@ input[type=submit] {
     height: auto;
     margin-bottom: 10px;
     -webkit-transform: scale(1);
-    transform: scale(1); /* create zoom-in effect */
+    -ms-transform: scale(1);
+        transform: scale(1); /* create zoom-in effect */
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .experience-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(0.90);
-    transform: scale(0.90);
+    -ms-transform: scale(0.90);
+        transform: scale(0.90);
 }
 
 
@@ -598,7 +607,7 @@ input[type=submit] {
 
 #header-members {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(img/team_background.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
     background-position: center;
     height: 100vh;
@@ -607,7 +616,7 @@ input[type=submit] {
 
 .section-team {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(img/15%20Snowbird.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
+    background-image: -o-linear-gradient(left, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
     background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -653,7 +662,8 @@ input[type=submit] {
 .members-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 /* .captain-container, .member-container {
@@ -700,6 +710,7 @@ input[type=submit] {
     /* font-weight: 400; */
     height:100%;
     -webkit-transition: .7s ease;
+    -o-transition: .7s ease;
     transition: .7s ease;
     opacity: 0;
     position: absolute;
@@ -710,10 +721,19 @@ input[type=submit] {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items:stretch;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align:stretch;
+        -ms-flex-align:stretch;
+            align-items:stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .discipline-text {
@@ -729,6 +749,7 @@ input[type=submit] {
     width: 100%;
     height: auto;
     -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -779,13 +800,17 @@ input[type=submit] {
     opacity: 0.8;
     -webkit-transition: opacity 0.5s, -webkit-box-shadow 0.5s;
     -webkit-transition: opacity 0.5s, box-shadow 0.5s ;
+    transition: opacity 0.5s, -webkit-box-shadow 0.5s;
+    -o-transition: opacity 0.5s, box-shadow 0.5s ;
     transition: opacity 0.5s, box-shadow 0.5s ;
+    transition: opacity 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
     border:0;
 }
 
 .map:hover {
     opacity: 1;
-     box-shadow: 1px 1px 5px #0f4c75;
+     -webkit-box-shadow: 1px 1px 5px #0f4c75;
+             box-shadow: 1px 1px 5px #0f4c75;
 }
 
 .box-location div {
@@ -807,7 +832,7 @@ input[type=submit] {
 /* -------------------------------------- */
 .header-sponsors {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 227, 227, 0.22)),to(rgb(0, 0, 0))), url(img/TitanBackground.jpg);
-    background-image: -webkit-linear-gradient(top, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
+    background-image: -o-linear-gradient(top, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
     background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
     background-position: center;
     background-size: cover;
@@ -827,7 +852,7 @@ input[type=submit] {
     align-items: flex-start;
     text-align:center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 250, 250, 0.06)), color-stop(80%, rgba(11, 10, 10, 0.85)));
-    background-image: -webkit-linear-gradient(top, rgba(250, 250, 250, 0.06), rgba(11, 10, 10, 0.85) 80%);
+    background-image: -o-linear-gradient(top, rgba(250, 250, 250, 0.06), rgba(11, 10, 10, 0.85) 80%);
     background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.06), rgba(11, 10, 10, 0.85) 80%);
     position:relative;
     min-height: 100vh;
@@ -848,7 +873,8 @@ input[type=submit] {
     top:50%;
     left:50%;
     -webkit-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
     min-width:100%;
     min-height: 100%;
     z-index:-1;
@@ -861,7 +887,8 @@ input[type=submit] {
     top:75%;
     left:50%;
     -webkit-transform: translate(-50%,-40%);
-    transform: translate(-50%,-40%);
+    -ms-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
     padding-top:0;
 }
 .section-sponsors,
@@ -1007,6 +1034,7 @@ footer p {
 .ion-social-youtube,
 .ion-social-instagram {
     -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 
@@ -1062,7 +1090,7 @@ input[type=checkbox]{
 }
 #header-join {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_2.jpg);
-    background-image: -webkit-linear-gradient(top, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
+    background-image: -o-linear-gradient(top, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
     background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_2.jpg);
     background-position: center;
     background-size: cover;
@@ -1081,7 +1109,8 @@ input[type=checkbox]{
     top:80%;
     left:50%;
     -webkit-transform: translate(-50%,-40%);
-    transform: translate(-50%,-40%);
+    -ms-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
     padding-top:0;
 }
 
@@ -1153,11 +1182,13 @@ input[type=checkbox]{
       align-content: space-between;
   top:50%;
   -webkit-transform:;
-  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
   max-width: 900px;
   border: 1px solid #888;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   animation-name: animatetop;
   -webkit-animation-duration: 0.3s;
@@ -1226,6 +1257,7 @@ input[type=checkbox]{
     display: flex;
     background: #E3FFD2;
     -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 	
