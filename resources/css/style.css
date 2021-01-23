@@ -653,6 +653,7 @@ input[type=submit] {
 .members-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        justify-content: space-around;
 }
 
 /* .captain-container, .member-container {
@@ -679,6 +680,8 @@ input[type=submit] {
     overflow: hidden;
     width: 20%;
     margin:20px 2%;
+    font-size: 110%;
+    font-weight:400;
 }
 .member-container:hover .image {
     opacity: 0.2;
@@ -695,6 +698,7 @@ input[type=submit] {
 
 .middle {
     /* font-weight: 400; */
+    height:100%;
     -webkit-transition: .7s ease;
     transition: .7s ease;
     opacity: 0;
@@ -706,6 +710,16 @@ input[type=submit] {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+  }
+
+  .discipline-text {
+    font-weight:300;
+    font-size:85%;
+    margin-top:10%;
   }
 
 

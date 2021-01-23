@@ -93,12 +93,13 @@ Ipad landscape mode has 1024 px*/
      footer {
         padding: 30px 3%;
     }   
-    
+
+  
 }
 
     
     
-/* SMALL PHONES to SMALL TABLETS. From 481px to 767px.
+/* SMALL PHONES to SMALL TABLETS. From 491px to 1000px.
 Ipad screen width is 168px */
 @media only screen and (max-width: 1000px) {
     body{font-size:16px;}
@@ -261,6 +262,15 @@ Ipad screen width is 168px */
         width:85%;
         margin: auto;
     }
+
+    .discipline-text {
+        font-size: 85%;
+    }
+    .members-container{
+        font-size: 93%;
+        margin: 20px 3%;
+    }
+    
 }
     
 /* Small phones from 0 to 490px */
@@ -389,7 +399,15 @@ Ipad screen width is 168px */
         -moz-transform: translate(0,10%);
         -ms-transform: translate(0,10%);
         -o-transform: translate(0,10%);
-}
+    }
+    .member-container {
+        width: 28%;
+        /* margin:10px 10%; */
+    }
+    .discipline-text {
+        display: none;
+        font-display: none;
+    }
     
 }
 
@@ -425,6 +443,11 @@ Ipad screen width is 168px */
     .modal-title {
         margin-top:5px
     }
+    .member-container {
+        width: 40%;
+        /* margin:10px 10%; */
+    }
+    
     
 
 }
