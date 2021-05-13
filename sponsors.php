@@ -29,7 +29,7 @@
     
     <body>
                 <nav class="sponsorsNav">
-                    <div class="row top-nav">
+                    <div class="top-nav">
                         <a href="index.html"><img src="resources/img/white%20logo%201.png" alt="HPDT logo" class="logo"></a>
                         <ul class="main-nav sponsors-nav js--main-nav" >
                             <!--
@@ -47,7 +47,7 @@
                 
                 <header class="header-sponsors">
                 <div class="row header-sponsors">
-                    <h2><br><br>Sponsors</h2>
+                    <h5><br><br>Sponsors</h5>
                     
                     <div class="row header-text">
                         <p class="long-copy white"><br>HPVDT is dedicated to learning, creating, and teaching engineering principles through projects that push the boundaries of efficiency in transportation. Our resources required to operate as well as building materials have come from 25+ industry partners and personal donations. If your organization believes in our mission, you too can contribute to developing the engineers of tomorrow and advancing sustainable transportation.</p>
@@ -278,7 +278,7 @@
             <div class="row">
                 <h2>Make an Impact</h2>
             </div>
-            <p class="longcopy" style="width:70%">We are delighted to see you are interested in supporting our team. Please complete the form below or send us an email at <a href="mailto:captain@hpvdt.skule.ca">captain@hpvdt.skule.ca</a>, and we will get back to you soon.<br><br></p>
+            <p class="longcopy" style="width:70%; text-align:center">We are delighted to see you are interested in supporting our team. Please complete the form below or send us an email at <a href="mailto:captain@hpvdt.skule.ca">captain@hpvdt.skule.ca</a>, and we will get back to you soon.<br><br></p>
             <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLScCbYCzIdPrC4VSLI6iMKmHaewaWkPLpfdvVx9KDmodEmgNJw/viewform?embedded=true" width="640" height="907" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             
             <!--

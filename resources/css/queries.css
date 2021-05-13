@@ -1,8 +1,8 @@
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1325px) {
-    .main-nav li {
+    /* .main-nav li {
         margin-left: 15px;
-    }
+    } */
 }
 
 
@@ -13,7 +13,9 @@
         width:100%;
         padding:0 2%;
     }
-    
+    /* .top-nav {
+        padding-left:0;
+    } */
     .long-copy {
         width: 90%;
         margin: 0 5%;
@@ -25,10 +27,10 @@
         width: auto;
     }
 
-    .main-nav li {
+    /* .main-nav li {
         margin-left: 20px;
         margin-right:0;
-    }
+    } */
     
     
     .member-description .long-copy {
@@ -59,8 +61,8 @@ Ipad landscape mode has 1024 px*/
     }
     
     .main-nav {
-        width:55%;
-        text-align: right;
+        /* width:55%; */
+        /* text-align: right; */
     }
     
     .sponsors-nav {
@@ -68,8 +70,8 @@ Ipad landscape mode has 1024 px*/
     }
     
     .main-nav li {
-        margin-left: 3%;
-        margin-right:0;
+        /* margin-left: 3%;
+        margin-right:0; */
         font-size: 88%
     }
     
@@ -91,12 +93,13 @@ Ipad landscape mode has 1024 px*/
      footer {
         padding: 30px 3%;
     }   
-    
+
+  
 }
 
     
     
-/* SMALL PHONES to SMALL TABLETS. From 481px to 767px.
+/* SMALL PHONES to SMALL TABLETS. From 491px to 1000px.
 Ipad screen width is 168px */
 @media only screen and (max-width: 1000px) {
     body{font-size:16px;}
@@ -117,11 +120,12 @@ Ipad screen width is 168px */
         float:left;
         margin-top: 20px;
         font-size:100%;
-        width:50%;
+        width:50%;        
     }
     
     .main-nav li {
         display: block;
+        padding:0 10%;
     }
     
     .main-nav li a:link,
@@ -161,7 +165,7 @@ Ipad screen width is 168px */
         width:100%;
 	    margin: 0 0 4% 0;
     }
-    .captains {
+    /* .captains {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;   
     }
@@ -180,7 +184,7 @@ Ipad screen width is 168px */
         width:70%;
         margin-left:15%;
     }
-        
+         */
     h1 {font-size: 180%;}
     h2 {font-size: 150%;}
     
@@ -258,10 +262,19 @@ Ipad screen width is 168px */
         width:85%;
         margin: auto;
     }
+
+    .discipline-text {
+        font-size: 85%;
+    }
+    .members-container{
+        font-size: 93%;
+        margin: 20px 3%;
+    }
+    
 }
     
-/* Small phones from 0 to 480px */
-@media only screen and (max-width: 480px) {
+/* Small phones from 0 to 490px */
+@media only screen and (max-width: 490px) {
     section{padding:20px 0;} 
     h1 {font-size: 150%;}
     
@@ -298,6 +311,10 @@ Ipad screen width is 168px */
         font-size: 90%;
     }
     
+    
+    .top-nav{
+        flex-wrap: wrap;
+    }
     .top-nav a {margin-top:0;}
     
     .logo {
@@ -357,9 +374,84 @@ Ipad screen width is 168px */
     .footer-col {
         width:50%;
     }
+
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:70%;
+        /* left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%); */
+    }
+
+    .modal-content{
+        overflow-y: initial !important;
+        margin-top:  20px;
+        height:90vh
+    }
+    .modal-body{
+        height: 73vh;
+        overflow-y: auto;
+    }
+    .modal-footer{
+        bottom:0;
+        transform: translate(0,10%);
+        -webkit-transform: translate(0,10%);
+        -moz-transform: translate(0,10%);
+        -ms-transform: translate(0,10%);
+        -o-transform: translate(0,10%);
+    }
+    .member-container {
+        width: 28%;
+        /* margin:10px 10%; */
+    }
+    .discipline-text {
+        display: none;
+        font-display: none;
+    }
     
 }
+
+/* Small phones from 0 to 350px */
+@media only screen and (max-width: 350px) {
+    h5{font-size: 140%;} 
+    h5::after {margin-top:10px;}
+
+    h3 {
+        font-size: 100%;
+        margin-bottom:5px;
+    }
+    .long-copy {
+        font-size: 80%;
+    }
+
+    .main-nav li:last-child {
+        padding-bottom: 100%;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+    }
+
+    .modal-header {
+        padding:1px 10px}
+    .modal-title {
+        margin-top:5px
+    }
+    .member-container {
+        width: 40%;
+        /* margin:10px 10%; */
+    }
     
+    
+
+}
+
     
     
     
