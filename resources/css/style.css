@@ -755,6 +755,10 @@ input[type=submit] {
             backface-visibility: hidden;
   }
 
+  .member-bold {
+        font-weight: bold;
+  }
+
 /* -------------------------------------- */
 /* CONTACT */
 /* -------------------------------------- */
@@ -1260,4 +1264,3 @@ input[type=checkbox]{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-	
