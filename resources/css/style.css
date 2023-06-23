@@ -237,6 +237,7 @@ input[type=submit] {
     text-align: center;
 }
 
+
 /* -------------------------------------- */
 /* HEADER */
 /* -------------------------------------- */
@@ -569,11 +570,19 @@ input[type=submit] {
     background-color: #f4f4f4;
 }
 .section-projects h2 {
-    margin-top:40px;
+
+    margin-top:40px;  
 }
 
 .project-box {
     border-bottom: 2px solid #e8e8e8;
+    padding-bottom:40px;
+    vertical-align: middle;
+}
+
+/* .collapse:only-child nth-child(3)*/
+
+.project-box-lastcurrentproject {
     padding-bottom:40px;
     vertical-align: middle;
 }
@@ -1059,7 +1068,6 @@ footer p {
     color: #d34836;
 }
 
-
 /* -------------------------------------- */
 /* CONTACT FORM */
 /* -------------------------------------- */
@@ -1279,10 +1287,46 @@ input[type=checkbox]{
 
 
 
-details >summary{
+.collapse{
+    display: block;
     cursor: pointer;
-    list-style: none; /* Remove default arrow thing*/
-    /* width:fit-content;
-    background-color: #0f4c75; */
+    /* position: */
+    margin: auto;
+    width: fit-content;
+    /* 10px top and bottom, 30px left and right  */
+    padding: 10px 30px;   
+    background-color: #18294d; /*matches join and sponsor*/
+    border: 1px solid #3282b8;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 200px;
+ 
+}
+.collapse:hover{
+    background-color: #0f4c75;
 }
 
+
+details >summary{
+    /* display: inline; */
+    list-style: none; 
+    /* Remove default arrow thing */
+}
+
+/* https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+details[open] summary ~ *{
+    animation: collapse_animate .5s ease-in-out;
+}
+
+/* move in and beocme opaque */
+@-webkit-keyframes collapse_animate {
+    from {padding-left: 500px; opacity: 0}
+    to {padding-left: 0px; opacity: 1} 
+  }
+  @keyframes collapse_animate {
+    from {padding-left: 500px; opacity: 0}
+    to {padding-left: 0px; opacity: 1} 
+ }
+ /*  margin-left: 75px; */
