@@ -209,6 +209,7 @@ input[type=submit] {
 button:hover
 input[type=submit]:hover,
 input[type=submit]:active {
+    cursor: pointer;
     background-color: #0f4c75;
 }
 
@@ -236,6 +237,7 @@ input[type=submit] {
     color: #fff;
     text-align: center;
 }
+
 
 /* -------------------------------------- */
 /* HEADER */
@@ -569,11 +571,19 @@ input[type=submit] {
     background-color: #f4f4f4;
 }
 .section-projects h2 {
-    margin-top:40px;
+
+    margin-top:40px;  
 }
 
 .project-box {
     border-bottom: 2px solid #e8e8e8;
+    padding-bottom:40px;
+    vertical-align: middle;
+}
+
+/* .collapse:only-child nth-child(3)*/
+
+.project-box-lastcurrentproject {
     padding-bottom:40px;
     vertical-align: middle;
 }
@@ -1059,7 +1069,6 @@ footer p {
     color: #d34836;
 }
 
-
 /* -------------------------------------- */
 /* CONTACT FORM */
 /* -------------------------------------- */
@@ -1195,15 +1204,17 @@ input[type=checkbox]{
   -ms-flex-line-pack: justify;
       align-content: space-between;
   top:50%;
+  
   -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+        transform: translate(0, -50%);
+      
   max-width: 900px;
   border: 1px solid #888;
   width: 80%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
-  animation-name: animatetop;
+  animation-name:animatetop;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 
@@ -1214,12 +1225,13 @@ input[type=checkbox]{
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {top: -50vh; opacity: 0}
+  to {top: 50vh; opacity: 1}
 }
 @keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {top: -50vh; opacity: 0}
+  to {top: 50vh; opacity: 1} /*vh = 1% of viewport height, prevents jerkiness of animation*/
+    /* Found that any "to {top:" value other than 0 prevented jerky animation,  */
 }
 
 /* -------------------------------------- */
@@ -1273,3 +1285,49 @@ input[type=checkbox]{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+
+
+.collapse{
+    display: block;
+    cursor: pointer;
+    /* position: */
+    margin: auto;
+    width: fit-content;
+    /* 10px top and bottom, 30px left and right  */
+    padding: 10px 30px;   
+    background-color: #18294d; /*matches join and sponsor*/
+    border: 1px solid #3282b8;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 200px;
+ 
+}
+.collapse:hover{
+    background-color: #0f4c75;
+}
+
+
+details >summary{
+    /* display: inline; */
+    list-style: none; 
+    /* Remove default arrow thing */
+}
+
+/* https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+details[open] summary ~ *{
+    animation: collapse_animate .5s ease-in-out;
+}
+
+/* move in and beocme opaque */
+@-webkit-keyframes collapse_animate {
+    from {padding-left: 500px; opacity: 0}
+    to {padding-left: 0px; opacity: 1} 
+  }
+  @keyframes collapse_animate {
+    from {padding-left: 500px; opacity: 0}
+    to {padding-left: 0px; opacity: 1} 
+ }
+ /*  margin-left: 75px; */
