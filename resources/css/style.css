@@ -618,6 +618,9 @@ input[type=submit] {
 /* TEAM */
 /* -------------------------------------- */
 
+.team-member-disclaimer{
+    text-align: center;
+}
 
 #header-members {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(img/team_background.jpg);
