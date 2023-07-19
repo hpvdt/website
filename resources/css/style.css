@@ -976,6 +976,17 @@ input[type=submit] {
     max-width: 100%;
     margin: auto;
 }
+.silver-sponsor-tall{
+    padding: 2% 1%;
+    overflow: hidden;
+    font-size: 90%;
+}
+.silver-sponsor-tall img{
+    display: block;
+    height: 80px;
+    max-width: 100%;
+    margin: auto;
+}
 .bronze-sponsor img,
 .previous-sponsor img {
     display: block;
