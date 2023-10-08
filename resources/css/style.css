@@ -618,9 +618,6 @@ input[type=submit] {
 /* TEAM */
 /* -------------------------------------- */
 
-.team-member-disclaimer{
-    text-align: center;
-}
 
 #header-members {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(cssimg/team_background.jpg);
@@ -1115,8 +1112,11 @@ input[type=checkbox]{
 /* -------------------------------------- */
 .column-setting {
     column-count: 2;
+    column-gap: 100pt;
 }
-
+.team-member-disclaimer{
+    text-align: center;
+}
 /* -------------------------------------- */
 /* JOIN PAGE */
 /* -------------------------------------- */
