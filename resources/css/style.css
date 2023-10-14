@@ -1110,6 +1110,20 @@ input[type=checkbox]{
 /* -------------------------------------- */
 /* TEAM MEMBERS PAGE */
 /* -------------------------------------- */
+.team-member-small-header {
+    display: inline-block;   /* 10px top and bottom, 30px left and right  */
+    text-decoration: none;
+    font-weight: 0,900;
+    font-size: 140%;
+    color: #18294d;
+    margin:60px auto 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    width:100%;
+    padding-top: 40px;
+
+}
+
 .column-setting {
     column-count: 2;
     column-gap: 100pt;

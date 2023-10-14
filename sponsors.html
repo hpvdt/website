@@ -2,30 +2,20 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:height="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="HPVDT is a student organization at the University of Toronto focused on the design and construction of innovative human-powered vehicles.">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
-        <link rel="manifest" href="resources/favicon/site.webmanifest">
-        <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#03163f">
-        <link rel="shortcut icon" href="resources/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#2d89ef">
-        <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        <title> Human Powered Vehicle Design Team </title>
+        <!-- Javascript to copy header from here: https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
+        <script 
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+        $(function(){
+        $("#header").load("myheadertemplate.html"); 
+        // $("#footer").load("footer.html"); 
+        });
+        </script> 
     </head>
+    <div id="header"></div>
 
     <body>
                 <nav class="sponsorsNav">
