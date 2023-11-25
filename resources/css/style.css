@@ -244,9 +244,9 @@ input[type=submit] {
 /* -------------------------------------- */
 
 #home {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(img/speedbike.png);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(img/speedbike.png);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.9))), url(cssimg/speedbike.png);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(cssimg/speedbike.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(cssimg/speedbike.png);
     background-position: center;
     height: 100vh;    /*  100% of the viewport  */
     background-attachment: fixed;
@@ -620,18 +620,18 @@ input[type=submit] {
 
 
 #header-members {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(img/team_background.jpg);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(img/team_background.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.98))), url(cssimg/team_background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(cssimg/team_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.98)), url(cssimg/team_background.jpg);
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
 }
 
 .section-team {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(img/15%20Snowbird.jpg);
-    background-image: -o-linear-gradient(left, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
-    background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(img/15%20Snowbird.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(15, 76, 117, 0.8)), to(rgba(12, 19, 23, 0.99))), url(cssimg/15%20Snowbird.jpg);
+    background-image: -o-linear-gradient(left, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(cssimg/15%20Snowbird.jpg);
+    background-image: linear-gradient(to right, rgba(15, 76, 117, 0.8), rgba(12, 19, 23, 0.99)), url(cssimg/15%20Snowbird.jpg);
     background-attachment: fixed;
     background-size: cover;
     color:#fff;
@@ -849,9 +849,9 @@ input[type=submit] {
 /* SPONSORS */
 /* -------------------------------------- */
 .header-sponsors {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 227, 227, 0.22)),to(rgb(0, 0, 0))), url(img/TitanBackground.jpg);
-    background-image: -o-linear-gradient(top, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
-    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(img/TitanBackground.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 227, 227, 0.22)),to(rgb(0, 0, 0))), url(cssimg/stationary\ bikes.jpg);
+    background-image: -o-linear-gradient(top, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(cssimg/stationary\ bikes.jpg);
+    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.22),rgb(0, 0, 0)), url(cssimg/stationary\ bikes.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;    /*  100% of the viewport  */
@@ -970,6 +970,17 @@ input[type=submit] {
 .silver-sponsor img{
     display: block;
     height: 50px;
+    max-width: 100%;
+    margin: auto;
+}
+.silver-sponsor-tall{
+    padding: 2% 1%;
+    overflow: hidden;
+    font-size: 90%;
+}
+.silver-sponsor-tall img{
+    display: block;
+    height: 80px;
     max-width: 100%;
     margin: auto;
 }
@@ -1101,8 +1112,11 @@ input[type=checkbox]{
 /* -------------------------------------- */
 .column-setting {
     column-count: 2;
+    column-gap: 100pt;
 }
-
+.team-member-disclaimer{
+    text-align: center;
+}
 /* -------------------------------------- */
 /* JOIN PAGE */
 /* -------------------------------------- */
@@ -1112,9 +1126,9 @@ input[type=checkbox]{
     text-align: center;
 }
 #header-join {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(img/join_background2.jpg);
-    background-image: -o-linear-gradient(top, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_background2.jpg);
-    background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(img/join_background2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 251, 240, 0.18)),to(rgb(0, 0, 0))), url(cssimg/team_waterford\ 23.jpg);
+    background-image: -o-linear-gradient(top, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(cssimg/team_waterford\ 23.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 251, 240, 0.18),rgb(0, 0, 0)), url(cssimg/team_waterford\ 23.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;    /*  100% of the viewport  */
