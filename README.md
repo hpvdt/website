@@ -10,8 +10,9 @@ This is the code for the team website: https://hpvdt.ca/. There are a few groups
 
 * Photos
     * All photo files are available in resources/img except for the big header background images, which are in resources/css/cssimg
- 
   
 [comment]: <> (Will add how to update this website/test it)
 
-Contact me on the HPVDT Discord or at <georgez.wang@mail.utoronto.ca> if you have questions or stuff to add to the website!
+To update the code, we use Visual Studio Code. We preview the changes before making pull requests on GitHub with the Live Server extension. 
+
+Contact me on the HPVDT Discord or at <georgez.wang@mail.utoronto.ca> if you have questions or ideas to add to the website!
