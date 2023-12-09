@@ -1,5 +1,5 @@
 # HPVDT Website
-This is the code for the team website: https://hpvdt.ca/. There are a few groups of files that are helpful for website updates in this folder and the resources folder.
+This is the code for the team website: https://hpvdt.ca/. There are a few groups of files that are helpful for website updates in this folder and the resources folder. 
 
 * HTML
   * The text and content for the four pages of the website are in the html files in this main folder
@@ -13,6 +13,6 @@ This is the code for the team website: https://hpvdt.ca/. There are a few groups
   
 [comment]: <> (Will add how to update this website/test it)
 
-To update the code, we use Visual Studio Code. We preview the changes before making pull requests on GitHub with the Live Server extension. 
+To update the code, we use Visual Studio Code. We preview the changes before making pull requests on GitHub with the Live Server extension. Feel free to delete files and unused code since it's relatively easy to find stuff like old sponsors in old versions on GitHub.
 
 Contact me on the HPVDT Discord or at <georgez.wang@mail.utoronto.ca> if you have questions or ideas to add to the website!
