@@ -1,0 +1,458 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1325px) {
+    /* .main-nav li {
+        margin-left: 15px;
+    } */
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body {font-size: 19px;}
+    
+    .home-text-box{
+        width:100%;
+        padding:0 2%;
+    }
+    /* .top-nav {
+        padding-left:0;
+    } */
+    .long-copy {
+        width: 90%;
+        margin: 0 5%;
+        font-size: 90% }
+    
+    .row {padding:0 2%;}
+    .logo {
+        height:38px;
+        width: auto;
+    }
+
+    /* .main-nav li {
+        margin-left: 20px;
+        margin-right:0;
+    } */
+    
+    
+    .member-description .long-copy {
+        margin-left: 0;
+        margin-right: 0;
+        width: 98%;
+    }
+    
+    .contact-form{
+    width:70%
+    }
+
+}
+    
+
+
+/* Small tablets to big tablets tablets: from 768px to 1023px
+Ipad landscape mode has 1024 px*/
+@media only screen and (max-width: 1100px) {
+    body {font-size: 18px;}
+    
+    section{padding: 50px 0;}
+    
+    .logo {
+        height:35px;
+        width: auto;
+        margin-top:10px
+    }
+    
+    .main-nav {
+        /* width:55%; */
+        /* text-align: right; */
+    }
+    
+    .sponsors-nav {
+        width:30%;
+    }
+    
+    .main-nav li {
+        /* margin-left: 3%;
+        margin-right:0; */
+        font-size: 88%
+    }
+    
+    .box-map {
+        background-color: #416279;
+        width:90%;  
+        margin-left:10%;
+    }
+    
+    .contact-form{
+    width:80%
+    }
+   /*  
+    .sponsor-subtitle { 
+        margin: 60px 30% 35px 30%;
+        padding: 7px 30px  1px 30px;
+    }
+    */
+     footer {
+        padding: 30px 3%;
+    }   
+
+  
+}
+
+    
+    
+/* SMALL PHONES to SMALL TABLETS. From 491px to 1000px.
+Ipad screen width is 168px */
+@media only screen and (max-width: 1000px) {
+    body{font-size:16px;}
+    section{padding:40px 0;}
+    
+    .home-text-box,
+    .row {padding: 0 4%;}
+    
+    .main-nav {display:none;}
+
+    
+   .mobile-nav-icon {
+       display:inline-block;
+       margin-top:5px;
+    }
+    
+    .main-nav {
+        float:left;
+        margin-top: 20px;
+        font-size:100%;
+        width:50%;        
+    }
+    
+    .main-nav li {
+        display: block;
+        padding:0 10%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding:10px 0;
+        font-size: 100%;
+    }
+    .logo {
+        margin-top:10px;
+        height:30px;
+        width:auto;
+    }
+    
+    .sticky .main-nav {margin-top: 15px;}
+    
+    .section-intro {
+        padding: 40px 0; 
+    }
+    .long-copy {
+        width:100%;
+        margin:0;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {padding: 10px 0;}
+
+    .sticky .mobile-nav-icon i{
+        color: #f2f2f2;        
+    }
+    
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    
+    
+    .col {
+        width:100%;
+	    margin: 0 0 4% 0;
+    }
+    /* .captains {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;   
+    }
+    
+    .captain-name {
+        text-align: left;
+        margin-left:0;
+    }
+    
+    .captain-container {
+        width:100%;
+        
+    }
+    .captain-photo img {
+        display:inline-block;
+        width:70%;
+        margin-left:15%;
+    }
+         */
+    h1 {font-size: 180%;}
+    h2 {font-size: 150%;}
+    
+    .btn:link,
+    .btn:visited {
+        padding: 5px 20px;
+    }
+    .section-experience {
+        padding:40px 0;
+    }
+    .experience-photo {
+        border-radius: 50%;
+    }
+    .experience-showcase {
+        width: 100%;
+    }
+    .experience-showcase li {
+        display: inline-block;
+        width: 50%;  
+        max-width: 300px;
+        margin:20px 10%;
+    }
+    .project-left {
+        margin-top: 30px;
+        text-align: center
+    }
+    .project-img {width: 70%;}
+        
+
+    .member-description {
+        padding-left: 3%;
+    }
+    .contact-box {
+        margin-top: 0;
+    }
+    .contact-info {
+        margin: 0;
+    }
+    
+    .box-map {
+        width:80%;  
+        margin-left:10%;
+    }
+  /*   
+    .sponsor-subtitle { 
+       margin: 100px 20% 35px 20%;
+        width:60%;
+    }
+    */
+    .member-photo img {
+        display:inline-block;
+        width:50%;
+        margin-left:25%;
+    }
+    .footer-col {
+        width:50%;
+    }
+    
+    .contact-form{
+    width:80%
+    }
+    
+    
+    .previous-sponsor,
+    .bronze-sponsor {
+        width:25%;
+        height:50px;
+        margin:20px 0;
+    
+    }
+    
+    .bronze-sponsor img,
+    .previous-sponsor img {
+        display: inline-block;
+        width:85%;
+        margin: auto;
+    }
+
+    .discipline-text {
+        font-size: 85%;
+    }
+    .members-container{
+        font-size: 93%;
+        margin: 20px 3%;
+    }
+    
+}
+    
+/* Small phones from 0 to 490px */
+@media only screen and (max-width: 490px) {
+    section{padding:20px 0;} 
+    h1 {font-size: 150%;}
+    
+    .home-text-box,
+    .row {padding: 0 1%;}
+    
+    .home-text-box {
+        top:60%;
+    }
+    
+    .mobile-nav-icon {
+        position:fixed;
+        right:10px;
+        top:5px;
+        margin-top:10px;
+        font-size:90%;
+    }
+    
+    .sticky .mobile-nav-icon {
+        margin-top:0;
+    }
+    
+     .main-nav {
+        float:left;
+        margin-top: 20px;
+        font-size:100%;
+        width:85%;
+        margin-top:5px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding:7px 0;
+        font-size: 90%;
+    }
+    
+    
+    .top-nav{
+        flex-wrap: wrap;
+    }
+    .top-nav a {margin-top:0;}
+    
+    .logo {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        margin-top:15px;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        padding: 7px 20px;  
+        font-weight: 300;
+        border-radius: 200px;
+        margin-bottom: 10px;
+    }
+    
+    .member-photo img {
+        display:inline-block;
+        width:60%;
+        margin-left:15%;
+    }
+    
+    .contact-form{
+    width:95%
+    }
+    
+    .sponsor-subtitle { 
+       /* margin: 100px 5% 35px 5%;*/
+        width:90%;
+    }
+    
+    .bronze-sponsor,
+    .previous-sponsor {
+        width:33.3%;
+        display: inline-block;
+        margin:0;
+    }
+    
+    .bronze-sponsor img,
+    .previous-sponsor img {
+        display: inline-block;
+        width:90%;
+        max-height: 30px;
+        margin: auto;
+    }    
+    
+    footer {
+        padding: 30px 3%;
+    }   
+    
+    .footer-nav li,
+    .social-links li {
+        margin-right: 10px;
+    }
+
+    .footer-col {
+        width:50%;
+    }
+
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:70%;
+        /* left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%); */
+    }
+
+    .modal-content{
+        overflow-y: initial !important;
+        margin-top:  20px;
+        height:90vh
+    }
+    .modal-body{
+        height: 73vh;
+        overflow-y: auto;
+    }
+    .modal-footer{
+        bottom:0;
+        transform: translate(0,10%);
+        -webkit-transform: translate(0,10%);
+        -moz-transform: translate(0,10%);
+        -ms-transform: translate(0,10%);
+        -o-transform: translate(0,10%);
+    }
+    .member-container {
+        width: 28%;
+        /* margin:10px 10%; */
+    }
+    .discipline-text {
+        display: none;
+        font-display: none;
+    }
+    
+}
+
+/* Small phones from 0 to 350px */
+@media only screen and (max-width: 350px) {
+    h5{font-size: 140%;} 
+    h5::after {margin-top:10px;}
+
+    h3 {
+        font-size: 100%;
+        margin-bottom:5px;
+    }
+    .long-copy {
+        font-size: 80%;
+    }
+
+    .main-nav li:last-child {
+        padding-bottom: 100%;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
+    .header-text2 {
+        width: 100%; /* same width as .row class, but absolutely positioned  */
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+    }
+
+    .modal-header {
+        padding:1px 10px}
+    .modal-title {
+        margin-top:5px
+    }
+    .member-container {
+        width: 40%;
+        /* margin:10px 10%; */
+    }
+    
+    
+
+}
+
+    
+    
+    
+    
