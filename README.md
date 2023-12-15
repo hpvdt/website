@@ -1,18 +1,21 @@
 # HPVDT Website
-This is the code for the team website: https://hpvdt.ca/. There are a few groups of files that are helpful for website updates in this folder and the resources folder. 
+This is the code for the team website: https://hpvdt.ca/. 
 
-* HTML
-  * The text and content for the four pages of the website are in the html files in this main folder
-  * For example, index.html represents the main page and sponsors.html shows the sponsors page
+## Folder Organization
+These are a few groups of files that are helpful for website updates. 
 
-* CSS
-  * Style (like colors, spacing, font size) are defined in website/resources/css/style.css
+| Folder/file | Purpose |
+| --- | ---|
+| `resources/css/style.css` | Style (like spacing, colors, and font size) for all website headers, buttons, and text boxes. Also defines the three big background header images|
+| `resources/img` | All other website images|
+| `index.html` | Text and content of main website page. |
+| `vendors` | Has ionicons for icons and other random tools|
 
-* Photos
-    * All photo files are available in resources/img except for the big header background images, which are in resources/css/cssimg
-  
+
+## Updating the Website
 [comment]: <> (Will add how to update this website/test it)
 
-To update the code, we use Visual Studio Code. We preview the changes before making pull requests on GitHub with the Live Server extension. Feel free to delete files and unused code since it's relatively easy to find stuff like old sponsors in old versions on GitHub.
+To update the code, we use Visual Studio Code. We preview the changes before making pull requests on GitHub with the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Feel free to delete files and unused code since it's relatively easy to find old content through GitHub version control.
 
-Contact me on the HPVDT Discord or at <georgez.wang@mail.utoronto.ca> if you have questions or ideas to add to the website!
+Contact us @hpvdt/webmasters or on discord if you have questions or ideas to add to the website!
+
