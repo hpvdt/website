@@ -580,13 +580,6 @@ input[type=submit] {
     padding-bottom:40px;
     vertical-align: middle;
 }
-
-/* .collapse:only-child nth-child(3)*/
-
-.project-box-lastcurrentproject {
-    padding-bottom:40px;
-    vertical-align: middle;
-}
 .project-box:last-child {
     border-bottom: none;
 }
@@ -1333,10 +1326,16 @@ input[type=checkbox]{
 }
 
 
-details >summary{
+summary {
     /* display: inline; */
-    list-style: none; 
-    /* Remove default arrow thing */
+    list-style: none; /* Remove default arrow thing */
+    padding: 80px auto;
+    margin: 0px auto 80px;
+}
+
+details {
+    padding: 80px auto;
+    margin-top: -40px;
 }
 
 /* https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
