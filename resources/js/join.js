@@ -3,7 +3,6 @@
 
 $('document').ready(function() {
 
-    
     /* For the sticky navigation */
     $('.js--section-intro').waypoint(function(direction){
         if(direction =="down"){
