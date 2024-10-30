@@ -490,7 +490,8 @@ input[type=submit] {
 /* EXPERIENCE */
 /* -------------------------------------- */
 .section-experience {
-    padding:80px 0;
+    padding:40px 0;
+    height: 500px;
     text-align: center;
     background-color: #03163f;
     font-size: 120%;
@@ -498,18 +499,19 @@ input[type=submit] {
 }
 
 .experience-showcase {
-    list-style: none;
     width: 100%;
+    min-height: 600px; /* Adjust as needed for consistent height */
 }
+
 .experience-showcase li {
     display: inline-block;
-    width: 25%;
+    width: 30%;
     margin:0 15px;
     color: #fff;
 }
 .experience-photo {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: transparent;
     border-radius:50%;
     border-color:none;
@@ -552,11 +554,29 @@ input[type=submit] {
 */
 .splide {
     margin: 0 auto;
-    /*
-    align-content: center;
-    padding: 0 10px;
-    */
+    overflow: hidden; /* Prevents extra space caused by overflow content */
 }
+
+.splide__pagination {
+        text-align: center;
+        margin-top: 20px;
+        bottom: 0;
+        padding: 0;
+        list-style: none;
+}
+
+.splide__pagination__page {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
 /*
 .splide__slide__container {
     margin:0 10px;
