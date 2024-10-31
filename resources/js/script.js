@@ -175,6 +175,13 @@ $('document').ready(function() {
           dots[slideIndex-1].className += " active";
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
+        //splide arrows left and right
+        document.querySelectorAll('.splide__arrow').forEach(button => {
+            button.addEventListener('click', (event) => {
+                // Check if any styles are being changed here
+                console.log('Button clicked:', event.target);
+            });
+        });
 
 //carrousel slider
     /*

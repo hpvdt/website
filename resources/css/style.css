@@ -491,7 +491,7 @@ input[type=submit] {
 /* -------------------------------------- */
 .section-experience {
     padding:40px 0;
-    height: 500px;
+    height: 600px;
     text-align: center;
     background-color: #03163f;
     font-size: 120%;
@@ -554,18 +554,20 @@ input[type=submit] {
 */
 .splide {
     margin: 0 auto;
-    overflow: hidden; /* Prevents extra space caused by overflow content */
+    z-index: 1;
+    /* overflow: hidden; Prevents extra space caused by overflow content */
 }
 
-.splide__pagination {
+/* .splide__pagination {
         text-align: center;
         margin-top: 20px;
         bottom: 0;
         padding: 0;
         list-style: none;
-}
+        visibility: hidden; 
+} */
 
-.splide__pagination__page {
+/* .splide__pagination__page {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -575,13 +577,41 @@ input[type=submit] {
     cursor: pointer;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
+} */
+
+.splide__arrow--prev {
+    border: none;
+    outline: none;
+    font-size: 17px; 
+    background: none;
+    position: static !important; /* Force absolute positioning */
+    /* transform: translateY(-80px) !important; Ensures vertical centering */
+    /* transform: translateX(-700px) !important; */
+    z-index: 50; /* Keeps arrows on top */
+    top: 80%; /* Centers the arrow vertically */
 }
 
-/*
-.splide__slide__container {
-    margin:0 10px;
+.splide__arrow--next {
+    border: none;
+    outline: none;
+    font-size: 17px; 
+    background: none;
+    position: static !important; /* Force absolute positioning */
+    /* transform: translateY(2px) !important; 
+    transform: translateX(700px) !important; */
+    z-index: 100; /* Keeps arrows on top */
+    top: 80%; /* Centers the arrow vertically */
 }
- */
+
+.splide__arrow:focus,
+.splide__arrow:active {
+    outline: none;
+    box-shadow: none;
+    /* transform: translateY(-50%) !important; Prevents shifting */
+    /* position: absolute !important; Ensure position stays as absolute */
+    position: static !important; Prevents the arrow from moving
+}
+
 
 /* -------------------------------------- */
 /* PROJECTS */
@@ -589,6 +619,7 @@ input[type=submit] {
 
 .section-projects {
     background-color: #f4f4f4;
+    z-index: 52;
 }
 .section-projects h2 {
 
@@ -597,7 +628,7 @@ input[type=submit] {
 
 .project-box {
     border-bottom: 2px solid #e8e8e8;
-    padding-bottom:40px;
+    padding-bottom:30px;
     vertical-align: middle;
 }
 .project-box:last-child {
