@@ -62,7 +62,7 @@ section {
 }
 
 /* ----------------- HEADINGS --------------- */
-h1,h2, h3 {
+h1,h2,h3,h4 {
     font-weight: 300;
     text-transform:uppercase;
 }
@@ -91,6 +91,11 @@ h3 {
     margin-bottom: 10px;
 }
 
+h4 {
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
 h2:after,
 h5:after {
     display: block;
@@ -103,12 +108,12 @@ h5:after {
 }
 h4 {
     font-weight: 300;
-    font-size: 120%;
+    font-size: 90%;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #18294d;
 }
 h5 {
     font-weight: 400;
@@ -652,6 +657,11 @@ input[type=submit] {
     margin-bottom: 20px;
 }
 
+.project-right h4 {
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
 .project-left {
     text-align: right;
     padding-right:1%;
@@ -816,6 +826,24 @@ input[type=submit] {
         font-weight: bold;
   }
 
+  .team-rider-note {
+      text-align: center;
+      font-style: italic;
+      margin: 3px auto;
+      color: #000000;
+      font-size: 120%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+  }
+
+  .faculty-advisor{
+    text-align: center;
+    line-height: 145%;
+        font-size: 90%;
+        margin-top: 10px;
+    
+  }
+
   
 /* -------------------------------------- */
 /* CONTACT */
@@ -886,6 +914,12 @@ input[type=submit] {
 .box-location h3 {
     color: #0f97e6;
     font-weight:400;
+    letter-spacing: 1px
+}
+
+.box-location h4 {
+    color: #0f97e6;
+    font-weight: 300;
     letter-spacing: 1px
 }
 
